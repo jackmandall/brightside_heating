@@ -242,6 +242,15 @@
     .hero h1 { font-size: 28px; }
   }
 
+  /* Reasons to choose */
+  .reasons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 980px) { .reasons-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .reasons-grid { grid-template-columns: 1fr; } }
+  .reason { background: var(--white); border: 1px solid var(--grey-200); border-radius: var(--r-md); padding: 22px; box-shadow: var(--shadow-sm); }
+  .reason .ic { width: 34px; height: 34px; border-radius: 10px; background: var(--grad-energy); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 800; margin-bottom: 14px; }
+  .reason h3 { font-family: 'Roboto Flex', Arial, sans-serif; font-weight: 800; color: var(--navy); font-size: 17px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .reason p { color: var(--grey-500); font-size: 14px; line-height: 1.5; }
+
   footer { background: var(--navy); color: rgba(255,255,255,.7); padding: 28px; font-size: 14px; }
   footer .f-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
   footer b { color: var(--white); font-weight: 600; }
@@ -256,6 +265,7 @@
       <a href="#demo">Your demo</a>
       <a href="#change">Current vs future</a>
       <a href="#savings">Your savings</a>
+      <a href="#reasons">Why BigChange</a>
       <a href="#quote">Your quote</a>
       <a class="nav-cta" href="https://landing.bigchange.com/H5iXB7xnKbYl" target="_blank" rel="noopener">View your quote</a>
     </div>
@@ -425,6 +435,24 @@
           <p class="note">Indicative and based on assumptions of growth. Your prepared quote sets out exact licensing for your team.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="reasons">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Why BigChange</div>
+      <h2>Reasons to choose BigChange</h2>
+      <p>A summary of what we covered, mapped to where Brightside Heating is heading.</p>
+    </div>
+    <div class="reasons-grid">
+        <div class="reason"><div class="ic">&#10003;</div><h3>Everything in one place</h3><p>Scheduling, job sheets, invoicing and reporting on one platform, across every job, not just insurance work.</p></div>
+        <div class="reason"><div class="ic">&#10003;</div><h3>One live schedule</h3><p>Replace the paper diary with one digital schedule across all 5 engineers, in the field and the office.</p></div>
+        <div class="reason"><div class="ic">&#10003;</div><h3>No double entry</h3><p>Two-way Xero Platinum integration so jobs, invoices and payments flow in real time and the books never run behind.</p></div>
+        <div class="reason"><div class="ic">&#10003;</div><h3>Built for heating and gas</h3><p>CP12 and CP6 certificates and job worksheets captured on the mobile app and stored against the job.</p></div>
+        <div class="reason"><div class="ic">&#10003;</div><h3>24/7 UK support</h3><p>Round-the-clock support from the Leeds team, on the phone within a minute and all handled in-house.</p></div>
+        <div class="reason"><div class="ic">&#10003;</div><h3>Future-proof for the next decade</h3><p>An AI-first platform with JustAsk on your own data, ready for Harrison to inherit and grow.</p></div>
     </div>
   </div>
 </section>
